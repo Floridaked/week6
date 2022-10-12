@@ -6,8 +6,46 @@ h2 + p {
 	color: red;
 }
 
-ul.list > li{
+ul.special > li{
 
 	list-style-type: none;
 	border-bottom: 1px solid grey;
+}
+
+a:visited{
+	color: red;
+}
+a:link{
+	color: green;
+}
+a:hover{
+	color: pink;
+}
+li:first-child::first-letter{
+	font-size: 120%;
+	font-style: bold;
+}
+
+a[title*= "page"]
+{
+	background-color: yellow;
+}
+
+.main{
+	color: rebeccapurple;
+	border: 2px solid #ccc;
+	padding: 1em;
+}
+
+.special{
+	color: green;
+}
+
+img {
+	float: left;
+
+}
+
+p.below{
+	clear: left;
 }
